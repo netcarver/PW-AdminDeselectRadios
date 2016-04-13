@@ -16,23 +16,23 @@
 
 class AdminDeselectRadios extends WireData implements Module {
 
-    public static function getModuleInfo() {
+	public static function getModuleInfo() {
 		return array(
 			'title'     => 'AdminDeselectRadios',
 			'class'     => 'AdminDeselectRadios',
-			'version'   => '1.0.0',
+			'version'   => '1.0.1',
 			'summary'   => __('Allows admin radio selects to be deselected.'),
 			'href'      => 'https://processwire.com/talk/topic/12987-uncheck-checked-radio-buttons-in-admin/#entry117744',
 			'author'    => 'tpr, netcarver',
-            'autoload'  => 'template=admin',
-            'singular'  => true,
-            'permanent' => false,
-			);
+			'autoload'  => 'template=admin',
+			'singular'  => true,
+			'permanent' => false,
+		);
 	}
 
 
 	public function init() {
-        $root = $this->config->urls->siteModules.__CLASS__;
+        	$root = $this->config->urls->siteModules.__CLASS__;
 		$this->config->scripts->add($root."/AdminDeselectRadios.js");
-    }
+	}
 }
