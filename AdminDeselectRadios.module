@@ -1,6 +1,7 @@
 <?php
 /**
- * AdminDeselectRadios (0.0.1)
+ * AdminDeselectRadios - A module for ProcessWire
+ *
  * Allows admin radio selects to be deselected.
  *
  * @author tpr, Netcarver
